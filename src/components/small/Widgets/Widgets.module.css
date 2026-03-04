@@ -1,0 +1,51 @@
+.widgets {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.widgetContainer {
+    width: calc(25% - 20px);
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #5E34E8;
+    border-radius: 16px;
+    align-content: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.widgetContainer:nth-child(1),
+.widgetContainer:nth-child(3) {
+    background-color: #5E34E8;
+}
+
+.widgetContainer:nth-child(2),
+.widgetContainer:nth-child(4) {
+    background-color: #997AFF;
+}
+
+.widgetTitle span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.widgetNumbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalNumber span {
+    font-weight: bolder;
+}
+
+.widgetIcon {
+    display: flex;
+    gap: 5px;
+}
+
+.widgetIcon span {
+    font-weight: 300;
+    font-size: 11px;
+}

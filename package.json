@@ -1,0 +1,35 @@
+{
+  "name": "ai-fitness-coach-admin-panel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@material-ui/core": "^4.12.4",
+    "@mui/material": "^5.15.11",
+    "@mui/x-charts": "^6.19.5",
+    "@mui/x-data-grid": "^6.19.5",
+    "@mui/x-data-grid-generator": "^6.19.5",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-datepicker": "^6.9.0",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "recharts": "^2.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-datepicker": "^6.2.0",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "typescript": "^5"
+  }
+}
