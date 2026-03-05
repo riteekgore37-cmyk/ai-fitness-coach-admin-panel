@@ -1,22 +1,28 @@
-import { getWorkoutByID } from '@/app/Actions/GetActions'
-import React from 'react'
-import ProgramDetails from '../../../../../../components/large/WorkoutProgramsComponent/ProgramDetails/ProgramDetails';
+"use client";
 
+import { useEffect, useState } from "react";
+import { getWorkoutByID } from "@/app/Actions/GetActions";
+import ProgramDetails from "../../../../../../components/large/WorkoutProgramsComponent/ProgramDetails/ProgramDetails";
 
-const SingleWorkout = async({ params, searchParams }: { params: { id: String }; searchParams: { id: String } }) => {
-    const workoutId=params.id
-    const{data:Workout}=await getWorkoutByID(workoutId)
-    console.log(Workout)
-    
+const SingleWorkout = ({ params }: { params: { id: string } }) => {
+  const [workout, setWorkout] = useState<any>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const { data } = await getWorkoutByID(params.id);
+      setWorkout(data);
+    };
+
+    fetchData();
+  }, [params.id]);
+
+  if (!workout) return <div>Loading...</div>;
 
   return (
-    
     <div>
-     <ProgramDetails program={Workout} />
-
-        
+      <ProgramDetails program={workout} />
     </div>
-  )
-}
+  );
+};
 
-export default SingleWorkout
+export default SingleWorkout;
