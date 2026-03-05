@@ -13,7 +13,7 @@ export default function Admins() {
         const token = localStorage.getItem("token");
 
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/admins`,
+          `${process.env.API_URL}/api/v1/console/admins`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -48,14 +48,14 @@ export async function fetchData(url: string, options: RequestOptions = {}) {
 /* ============================= */
 
 export async function getmealPlans() {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/mealplans`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/mealplans`, {
         cache: 'no-cache',
         next: { tags: ['mealplans'] }
     });
 }
 
 export async function getmealplansById(mealplanId: String) {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/mealplans/${mealplanId}`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/mealplans/${mealplanId}`, {
         cache: 'no-cache',
         next: { tags: ['mealplans'] }
     });
@@ -66,14 +66,14 @@ export async function getmealplansById(mealplanId: String) {
 /* ============================= */
 
 export async function getmeals() {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/meals`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/meals`, {
         cache: 'no-cache',
         next: { tags: ['meals'] }
     });
 }
 
 export async function getmealsById(mealId: String) {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/meals/${mealId}`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/meals/${mealId}`, {
         cache: 'no-cache',
         next: { tags: ['meals'] }
     });
@@ -84,14 +84,14 @@ export async function getmealsById(mealId: String) {
 /* ============================= */
 
 export async function getIngradients() {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/Ingredients`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/Ingredients`, {
         cache: 'no-cache',
         next: { tags: ['ingradients'] }
     });
 }
 
 export async function getIngradientsById(IngradientId: string) {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/Ingredients/${IngradientId}`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/Ingredients/${IngradientId}`, {
         cache: 'no-cache',
         next: { tags: ['ingradients'] }
     });
@@ -102,14 +102,14 @@ export async function getIngradientsById(IngradientId: string) {
 /* ============================= */
 
 export async function getWorkouts() {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/workouts`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/workouts`, {
         cache: 'no-cache',
         next: { tags: ['Workouts'] }
     });
 }
 
 export async function getWorkoutByID(WorkoutId: String) {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/workouts/${WorkoutId}`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/workouts/${WorkoutId}`, {
         cache: 'no-cache',
         next: { tags: ['Workouts'] }
     });
@@ -120,14 +120,14 @@ export async function getWorkoutByID(WorkoutId: String) {
 /* ============================= */
 
 export async function getMuscles() {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/muscles`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/muscles`, {
         cache: 'no-cache',
         next: { tags: ['muscles'] }
     });
 }
 
 export async function getMusclesById(muscleId: String) {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/muscles/${muscleId}`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/muscles/${muscleId}`, {
         cache: 'no-cache',
         next: { tags: ['muscle'] }
     });
@@ -138,14 +138,14 @@ export async function getMusclesById(muscleId: String) {
 /* ============================= */
 
 export async function getExercises() {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/exercises`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/exercises`, {
         cache: 'no-cache',
         next: { tags: ['exercises'] }
     });
 }
 
 export async function getExerciseById(exerciseId: String) {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/exercises/${exerciseId}`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/exercises/${exerciseId}`, {
         cache: 'no-cache',
         next: { tags: ['exercises'] }
     });
@@ -156,14 +156,14 @@ export async function getExerciseById(exerciseId: String) {
 /* ============================= */
 
 export async function getEquipments() {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/equipments`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/equipments`, {
         cache: 'no-cache',
         next: { tags: ['equipments'] }
     });
 }
 
 export async function getEquipmentById(equipmentId: String) {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/equipments/${equipmentId}`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/equipments/${equipmentId}`, {
         cache: 'no-cache',
         next: { tags: ['equipment'] }
     });
@@ -174,7 +174,7 @@ export async function getEquipmentById(equipmentId: String) {
 /* ============================= */
 
 export async function getAdmins() {
-    return fetchData(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/admins`, {
+    return fetchData(`${process.env.API_URL}/api/v1/console/admins`, {
         cache: 'no-cache',
         next: { tags: ['admins'] }
     });

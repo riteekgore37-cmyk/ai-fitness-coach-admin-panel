@@ -2,7 +2,7 @@
 import { revalidateTag } from "next/cache";
 const authToken = process.env.ADMIN_TOKEN;
 async function Delete(endpoint: string, Id: any) {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/console/${endpoint}/${Id}`, {
+    const res = await fetch(`${process.env.API_URL}/api/v1/console/${endpoint}/${Id}`, {
         method: 'DELETE',
         headers: {
             Accept: 'application/json',
